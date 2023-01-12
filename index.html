@@ -38,10 +38,55 @@
                     <img src="images/user.jpg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there, My name is Safat and I am a Ui/Ux Designer with a creative mind and full of skills. Hit me up and I’ll be happy to help with your design ideas</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Figma, Photoshop, Illustrator</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JAVASCRIPT</li>
+                            <li><span>Key Strengths</span><br>Organized | Detail-oriented | Flexible | Creative | Dedicated</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>N/A</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Design Course at Nurency Digital | Dhaka, Bangladesh</li>
+                            <li><span>2023</span><br>Higher Secondary Certificate (H.S.C) - Arts at Universal College | Sylhet, Bangladesh</li>
+                            <li><span>2020</span><br>Senior Dakhil Certificate (S.D.C) - General at Shahporan Jamiya Islamia Madrasha | Sylhet, Bangladesh</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- Services -->
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script> 
 </body>
 </html>
