@@ -245,3 +245,41 @@ nav ul li a:hover::after{
 .btn:hover{
     background-color: #6EE0BC;
 }
+
+/* -------   contact   --------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    width: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #6EE0BC;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icon{
+    margin-top: 30px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform .5s;
+}
+
+.social-icon a:hover{
+    color: #6EE0BC;
+    transform: translateY(-5px);
+}
