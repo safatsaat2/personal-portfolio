@@ -176,10 +176,12 @@ nav ul li a:hover::after{
 
 /* Portfolio */
 
-.portfolio{
+#portfolio{
     padding: 50px 0;
 }
-
+#portfolio .container .sub-title{
+    text-align: center;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -282,4 +284,62 @@ nav ul li a:hover::after{
 .social-icon a:hover{
     color: #6EE0BC;
     transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #6EE0BC;
+
+}
+.btn.btn2:hover{
+    background-color: black;
+    border: 1px solid #6EE0BC;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding:14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* CSS FOR MOBILE */
+
+nav .fas{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    #header{
+        background-image: url(images/me.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
 }
